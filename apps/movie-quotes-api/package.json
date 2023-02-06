@@ -1,0 +1,18 @@
+{
+  "name": "movie-quotes-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "platformatic db start",
+    "dev": "npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mcansh/remix-fastify": "https://github.com/autotelic/remix-fastify/raw/release/configurable-remix-root/packages/remix-fastify/mcansh-remix-fastify-2.3.1.tgz",
+    "platformatic": "^0.14.0"
+  }
+}
