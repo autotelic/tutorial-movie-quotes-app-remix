@@ -1,7 +1,7 @@
 import { createClient } from '@urql/core';
 
 const graphqlClient = createClient({
-  url: import.meta.env.PUBLIC_GRAPHQL_API_ENDPOINT,
+  url: process.env.PUBLIC_GRAPHQL_API_ENDPOINT,
   requestPolicy: "network-only"
 });
 
@@ -29,3 +29,5 @@ export const quotesApi = {
     return await graphqlClientWrapper("mutation", gqlQuery, queryVariables);
   }
 }
+
+export { gql } from "@urql/core";
